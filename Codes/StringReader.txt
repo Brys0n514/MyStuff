@@ -1,0 +1,25 @@
+package work;
+import java.util.Scanner;
+
+public class Stringy {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		String main, sub;
+		
+		System.out.print("Enter a String:");
+		main = input.next();
+		System.out.print("Enter a second String:");
+		sub = input.next();
+		
+		if (main.contains(sub)) {
+			System.out.print(sub + " is a substring of " + main);
+		}
+		else {
+			System.out.print(sub + "isn't a substring of " + main);
+		}
+		
+		
+	}
+}
