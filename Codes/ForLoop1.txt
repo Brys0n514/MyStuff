@@ -1,0 +1,22 @@
+
+public class ForLoop1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String[] values = new String[5];
+		values[0] = "Zero";
+		values[1] = "One";
+		values[2] = "Two";
+		values[3] = "Three";
+		values[4] = "Four";
+		
+		
+		for (String value : values) {
+			System.out.println(value);
+			
+		}
+
+	}
+
+}
