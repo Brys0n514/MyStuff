@@ -1,0 +1,86 @@
+Bryson Watkins 
+CS1 Quiz 2
+
+
+Question 1.
+For loop that counts to 10:
+
+```
+public class ForLooper {
+
+
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+
+		
+
+		String[] values = new String[11];
+
+		values[0] = "Zero";
+		values[1] = "One";
+		values[2] = "Two";
+		values[3] = "Three";
+		values[4] = "Four";
+		values[5] = "Five";
+		values[6] = "Six";		
+		values[7] = "Seven";
+		values[8] = "Eight";		
+		values[9] = "Nine";
+		values[10] = "Ten"; 
+
+		for (String value : values) {
+
+			System.out.println(value);
+
+			
+
+		}
+
+
+
+	}
+
+
+
+}
+```
+
+
+Question 2.
+While loop that says hello class 5 times:
+
+```
+public class WhileLoop {
+
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+
+	
+		int x = 15;
+
+		while (x < 20) {
+
+			System.out.print("Hello Class!");
+
+			x++;
+
+			System.out.print("\n");
+
+		}
+
+
+
+	}
+
+
+
+}
+```
+
+
+
+
