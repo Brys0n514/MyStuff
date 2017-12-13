@@ -1,0 +1,180 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
+
+public class V1 {
+
+	public static void main(String[] args) { 
+
+		System.out.println("Welcome to the Dinner Decider!");
+		
+		System.out.println("This program is designed to help you and/or your signifcant other decide what to eat for dinner tonight. It will ask you a series of carefully selected questions to find what is on the menu tonight.");
+		System.out.println(" ");
+		
+		Scanner sc=new Scanner(System.in);
+		
+		// 10 pts. Are you willing to drive?
+		System.out.println("Are you willing to drive tonight? Enter '1' for yes. Enter '2' for no.");
+		int drive = sc.nextInt();
+		
+		if (drive == 1) {
+			System.out.println("How far are you willing to drive? (in miles)");
+			int miles = sc.nextInt();
+		}
+		if (drive == 2) {
+			System.out.println("The weather is pretty nice, it would be a great day for a walk!");
+		}
+		
+		System.out.println("How would you like to eat tonight?");
+		// 10 pts. Drive thru, dine in, delivery, cook at home.
+		System.out.println("Enter '1' if you want to dine at a restauraunt. Enter '2' if you fancy a drive thru. Enter '3' if you would like food delivered. Enter '4' if you'd like to cook for yourselves.");
+		int dine = sc.nextInt();
+		
+		// 10 pts. Allow the user to select from food types.
+		
+		if (dine == 1) {
+			System.out.println("A restauraunt sounds nice.");
+			System.out.println("What your preffered price range for this shin-dig");
+			
+			// 10 pts. Ask user their budget for the meal.
+			System.out.println("Enter '1' if you prefer a budget friendly meal. Enter '2' if you can afford an average priced meal. Enter '3' if money ain't an issue.");
+			System.out.println("Remember, if you have to ask you can't afford it.");
+			int price = sc.nextInt();
+			
+			if (price == 1) {
+				System.out.println("You could eat in at McDonalds, Pizza Hut, or Subway");
+			}
+			if (price == 2) {
+				System.out.println("There are a lot of good mid-range options around here. I suggest Jerry's, Palacio's, or Maybe even Arby's.");
+			}
+			if (price == 3) {
+					System.out.println("We have options including: Lucille's, El Patio, Hibachi's.");
+			}
+		}
+		
+		
+		if (dine == 2) {
+			System.out.println("Drive thrus it is!");
+			System.out.println("What your preffered price range for this shin-dig");
+			System.out.println("Enter '1' if you prefer a budget friendly meal. Enter '2' if you can afford an average priced meal. Enter '3' if money ain't an issue.");
+			System.out.println("Remember, if you have to ask you can't afford it.");
+			int price = sc.nextInt();
+				
+				if (price == 1) {
+					System.out.println("McDonalds is looking like your best bet.");
+				}
+				if (price == 2) {
+					System.out.println("I suggest Arby's, Carl's Jr. or Sonic.");
+				}
+				if (price == 3) {
+						System.out.println("You silly goose! There are no extravagant Drive Thrus here!");
+				}
+			
+		}
+		
+		
+		if ( dine == 3) {
+			System.out.println("Delivery can do!");
+			System.out.println("What your preffered price range for this shin-dig");
+			System.out.println("Enter '1' if you prefer a budget friendly meal. Enter '2' if you can afford an average priced meal. Enter '3' if money ain't an issue.");
+			System.out.println("Remember, if you have to ask you can't afford it.");
+			
+			
+			int price = sc.nextInt();
+			
+			if (price == 1) {
+				System.out.println("I'm pretty sure McDonald's doesn't deliver. Sorry.");
+			}
+			if (price == 2) {
+				System.out.println("Pizza Hut is basically your only option");
+			}
+			if (price == 3) {
+					System.out.println("Pizza Hut is the only place that delivers here.");
+			}
+		}
+		
+		
+		if (dine == 4) {
+			System.out.println("Let's hope you know what you're doing.");
+			System.out.println("What your preffered price range for this shin-dig");
+			System.out.println("Enter '1' if you prefer a budget friendly meal. Enter '2' if you can afford an average priced meal. Enter '3' if money ain't an issue.");
+			System.out.println("Remember, if you have to ask you can't afford it.");
+			
+			
+			int price = sc.nextInt();
+			
+			if (price == 1) {
+				System.out.println("Ramen Noodles and cereal is what my kind eat!");
+			}
+			if (price == 2) {
+				System.out.println("There are literally countless options you can explore in this price bracket. If all else fails, just throw everything into a pot and see what happens!");
+			}
+			if (price == 3) {
+					System.out.println("There really isn't a direction I can point you in. If you have it in the kitchen, start cooking it.");
+			}
+		}
+		
+		System.out.println(" ");
+		System.out.println("Did this help you? Enter '1' if yes. Enter '2' if not.");
+		int help = sc.nextInt();
+		
+		if (help == 1) {
+			System.out.println("Cool! Enjoy your meal!");
+		}
+		
+		if (help ==2) {
+			
+			List<String> list = new ArrayList<String>();
+			 list.add("McDonald's");
+			 list.add("Jerry's");
+			 list.add("The Mark");
+			 list.add("Downtown Diner");
+			 list.add("The Point");
+			 list.add("Arby's");
+			 list.add("El Patio");
+			 list.add("Pecina's");
+			 list.add("Carl's Jr.");
+			 list.add("Pizza Hut");
+			 list.add("Papa John's");
+			 list.add("Little Ceasar's");
+			 list.add("Subway");
+			 list.add("Lucille's");
+			 list.add("Luigi's");
+			 list.add("Hibachi's");
+			 
+			 String name = list.get(new Random().nextInt(list.size()));
+			
+			
+			System.out.println("Well, take my word and eat at " + name );
+			System.out.println("Now ask your dinner date to guess where y'all are going.");
+			
+			// 10 pts. Ask user's significant other to guess the venue.
+			System.out.println("Did they guess right? Enter '1' for yes. Enter '2' for no.");
+			int guess =sc.nextInt();
+			
+			if (guess == 1) {
+				System.out.println("Then it is really meant to be.");
+			}
+			if (guess == 2) {
+				System.out.print("Welp, this program clearly offers the correct choice for you.");
+				
+				
+				System.out.println("Where did you decide to eat?");
+				int answer = sc.nextInt();
+				
+				// 10 pts. How far is the restauraunt.
+				// 10 pts. Let user enter '-1' if they don't know the distance.
+				System.out.println("How far away is it? If you don't know, enter '-1'");
+				int far = sc.nextInt();
+				
+				
+				System.out.println(" ");
+				System.out.println("Thank you for using this program to aid in you quest to end your hunger. Enjoy your evening.");
+			}
+ 		}
+		}
+	}
+
+		
+	
