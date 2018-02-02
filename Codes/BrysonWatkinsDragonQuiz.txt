@@ -1,0 +1,144 @@
+Bryson Watkins -- Dragon Example
+-----------------------------------
+
+
+public class Dragon {
+
+String name;	
+int Dragonbite;
+int Dragonclaw;
+int Dragantailwhip;
+double DragonHP;
+double DragonArmor;
+double DragonStrength;
+
+		
+		public Dragon() {
+			
+			// Attack Strengths and Dragon attributes
+			// Methods for returning attack amounts
+			// i.e. Attack with a bite and it returns the damage output
+			
+		}
+
+
+		public Dragon(String string) {
+			// TODO Auto-generated constructor stub
+		}
+
+
+		public int getDragonbite() {
+			System.out.println("Bite power is " + Dragonbite);
+			return Dragonbite;
+		}
+
+
+		public void setDragonbite(int dragonbite) {
+			
+			Dragonbite = dragonbite;
+		}
+
+
+		public int getDragonclaw() {
+			System.out.println("Claw power is " + Dragonclaw);
+			return Dragonclaw;
+		}
+
+
+		public void setDragonclaw(int dragonclaw) {
+			Dragonclaw = dragonclaw;
+		}
+
+
+		public int getDragantailwhip() {
+			System.out.println("Tail Whip power is " + Dragantailwhip);
+			return Dragantailwhip;
+		}
+
+
+		public void setDragantailwhip(int dragantailwhip) {
+			Dragantailwhip = dragantailwhip;
+		}
+
+
+		public double getDragonHP() {
+			System.out.println("Dragon HP is " + DragonHP);
+			return DragonHP;
+		}
+
+
+		public void setDragonHP(double dragonHP) {
+			DragonHP = dragonHP;
+		}
+
+
+		public double getDragonArmor() {
+			System.out.println("Dragon Armor is " + DragonArmor);
+			return DragonArmor;
+		}
+
+
+		public void setDragonArmor(double dragonArmor) {
+			DragonArmor = dragonArmor;
+		}
+
+
+		public double getDragonStrength() {
+			System.out.println("Dragon Strength is " + DragonStrength);
+			return DragonStrength;
+		}
+
+
+		public void setDragonStrength(double dragonStrength) {
+			DragonStrength = dragonStrength;
+		}
+			
+	
+		public static void main(String []args) {
+		
+	Dragon Steve = new Dragon();
+	
+	System.out.println("This is Steve");
+	
+	Steve.setDragantailwhip(10);
+	Steve.setDragonbite(10);
+	Steve.setDragonclaw(10);
+	Steve.setDragonHP(100);
+	Steve.setDragonArmor(50);
+	Steve.setDragonStrength(30);
+		
+	Steve.getDragantailwhip();
+	Steve.getDragonbite();
+	Steve.getDragonclaw();
+	Steve.getDragonHP();
+	Steve.getDragonArmor();
+	Steve.getDragonStrength();
+	
+	System.out.println("");
+	System.out.println("");
+	System.out.println("");
+	
+	Dragon Marty = new Dragon();
+	
+	System.out.println("This is Marty");
+	
+	Marty.setDragantailwhip(15);
+	Marty.setDragonbite(15);
+	Marty.setDragonclaw(5);
+	Marty.setDragonHP(120);
+	Marty.setDragonArmor(40);
+	Marty.setDragonStrength(25);
+		
+	Marty.getDragantailwhip();
+	Marty.getDragonbite();
+	Marty.getDragonclaw();
+	Marty.getDragonHP();
+	Marty.getDragonArmor();
+	Marty.getDragonStrength();
+			
+		}
+		
+		
+		
+}
+		
